@@ -1,0 +1,62 @@
+.home-page {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .home-hero {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .home-buttons a {
+    text-decoration: none;
+  }
+  
+  .home-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .home-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .home-signup {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+  }
+  

@@ -1,0 +1,131 @@
+.crypto-page {
+    margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .crypto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .crypto-title {
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+  
+  .crypto-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+  }
+  
+  .crypto-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .crypto-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+  }
+  
+  .crypto-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .crypto-form-column {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .crypto-input,
+  .crypto-select,
+  .crypto-button {
+    display: block;
+    margin: 12px auto 0 auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .crypto-input,
+  .crypto-select {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .crypto-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+  }
+  
+  .crypto-select option {
+    color: black;
+    background-color: white;
+  }
+  
+  .crypto-button {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .crypto-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .crypto-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .crypto-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    z-index: 9999;
+    animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+  }
+  
+  .crypto-toast.success {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .crypto-toast.error {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+  }
+  

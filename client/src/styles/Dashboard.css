@@ -1,0 +1,155 @@
+.dashboard-wrapper {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-center-text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  
+  .dashboard-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .dashboard-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dashboard-infos h1 {
+    font-size: 2.3rem;
+    margin: 0 0 10px 0;
+  }
+  
+  .dashboard-highlight {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .dashboard-email,
+  .dashboard-tel {
+    margin: 4px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  .dashboard-status {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .dashboard-verified {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .dashboard-card {
+    background: linear-gradient(145deg, rgba(24,34,45,0.9), rgba(36,48,60,0.9));
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  }
+  
+  .dashboard-crypto-card {
+    background: linear-gradient(145deg, rgba(24,34,45,0.9), rgba(36,48,60,0.9));
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .dashboard-crypto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  }
+  
+  .dashboard-crypto-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  
+  .dashboard-crypto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .dashboard-crypto-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .dashboard-crypto-sub {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+  }
+  
+  .dashboard-crypto-amount {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 6px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dashboard-profile {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .dashboard-container {
+      padding: 0 20px;
+    }
+  
+    .dashboard-cards {
+      justify-content: center;
+    }
+  }
+  

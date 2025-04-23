@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+  }
+  
+  .virement-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .virement-sections {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .virement-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 350px;
+    color: white;
+    text-align: center;
+  }
+  
+  .virement-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .virement-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .virement-input,
+  .virement-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 1rem;
+  }
+
+  .virement-input option {
+    color: black;
+  }
+  
+  .virement-button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .virement-button:hover {
+    transform: scale(1.03);
+  }
+  
+  .virement-message {
+    margin-top: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .virement-balances {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+    color: white;
+  }
+  
+  .virement-confirmation {
+    margin-top: 20px;
+  }
+  
+  .virement-confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,86 @@
+.courant-wrapper {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.courant-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.courant-solde {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.courant-solde h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.courant-solde p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.courant-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.courant-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.courant-card {
+  background: linear-gradient(145deg, rgba(24,34,45,0.9), rgba(36,48,60,0.9));
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.courant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.courant-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+}
+
+.courant-sub {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 2px 0;
+}
+
+.courant-amount {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .courant-container {
+      padding: 20px;
+  }
+}
